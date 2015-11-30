@@ -1,13 +1,14 @@
-import org.junit.Assert;
+import configuration.SeleniumPomModule;
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.openqa.selenium.WebDriver;
 import pages.google.Homepage;
 import pages.google.SearchResultsPage;
 import pages.google.sections.searchresults.SearchResult;
 import pages.wikipedia.Article;
 import uk.sponte.automation.seleniumpom.PageFactory;
+import uk.sponte.automation.seleniumpom.dependencies.DependencyInjector;
 
 import java.util.Optional;
 import java.util.concurrent.TimeoutException;
@@ -15,26 +16,21 @@ import java.util.concurrent.TimeoutException;
 /**
  * Created by n450777 on 30/11/2015.
  */
-public class Examples {
-
-    private WebDriver driver;
+public class GoogleGuiceDependencyInjectionTest {
 
     private PageFactory pageFactory;
 
     @Before
-    public void setup() {
-        System.setProperty("selenium.webdriver", "firefox");
-
-        pageFactory = new PageFactory();
-        driver = pageFactory.getDriver();
-        driver.navigate().to("http://www.google.com/ncr");
+    public void setupDependencyInjection() {
+        DependencyInjector di = new SeleniumPomModule();
+        pageFactory = di.get(PageFactory.class);
+        pageFactory.getDriver().navigate().to("https://www.google.com/ncr");
     }
 
     @After
     public void teardown() {
-        driver.quit();
+        pageFactory.getDriver().quit();
     }
-
 
     @Test
     public void runExampleTest() throws TimeoutException {

@@ -11,6 +11,9 @@
     </content>
     <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="TEST" name="Maven: com.google.inject:guice:3.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: javax.inject:javax.inject:1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: aopalliance:aopalliance:1.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: uk.sponte.automation:selenium-pom:1.0.7" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.seleniumhq.selenium:selenium-java:2.45.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.seleniumhq.selenium:selenium-chrome-driver:2.45.0" level="project" />
@@ -50,9 +53,6 @@
     <orderEntry type="library" scope="TEST" name="Maven: org.webbitserver:webbit:0.4.14" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: io.netty:netty:3.5.2.Final" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.seleniumhq.selenium:selenium-leg-rc:2.45.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.google.inject:guice:3.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: javax.inject:javax.inject:1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: aopalliance:aopalliance:1.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.reflections:reflections:0.9.10" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: com.google.guava:guava:15.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.javassist:javassist:3.19.0-GA" level="project" />
