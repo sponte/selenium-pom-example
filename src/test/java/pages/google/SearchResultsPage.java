@@ -1,8 +1,9 @@
-package uk.sponte.google.pages;
+package pages.google;
 
 import org.openqa.selenium.support.FindBy;
+import pages.google.sections.searchresults.SearchResults;
 import uk.sponte.automation.seleniumpom.PageElement;
-import uk.sponte.google.sections.searchresults.SearchResults;
+
 
 /**
  * Created by n450777 on 01/05/15.

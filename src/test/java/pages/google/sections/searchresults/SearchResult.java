@@ -1,8 +1,11 @@
-package uk.sponte.google.sections.searchresults;
+package pages.google.sections.searchresults;
 
 import org.openqa.selenium.support.FindBy;
 import uk.sponte.automation.seleniumpom.PageElement;
 import uk.sponte.automation.seleniumpom.PageSection;
+
+import java.net.MalformedURLException;
+import java.net.URL;
 
 /**
  * Created by n450777 on 01/05/15.
@@ -18,7 +21,13 @@ public class SearchResult extends PageSection {
         this.link.click();
     }
 
-    public String getUrl() {
-        return this.link.getAttribute("href");
+    public URL getUrl() {
+        try {
+            return new URL(this.link.getAttribute("href"));
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
+
+        return null;
     }
 }

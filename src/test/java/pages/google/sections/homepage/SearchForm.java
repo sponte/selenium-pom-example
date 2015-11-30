@@ -1,5 +1,6 @@
-package uk.sponte.google.sections.homepage;
+package pages.google.sections.homepage;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.FindBy;
 import uk.sponte.automation.seleniumpom.PageElement;
 import uk.sponte.automation.seleniumpom.PageSection;
@@ -13,6 +14,6 @@ public class SearchForm extends PageSection {
 
     public void searchFor(String term) {
         this.query.set(term);
-        this.query.submit();
+        this.query.sendKeys(Keys.RETURN);
     }
 }

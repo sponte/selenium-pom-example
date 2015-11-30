@@ -1,7 +1,7 @@
-package uk.sponte.google.pages;
+package pages.google;
 
 import org.openqa.selenium.support.FindBy;
-import uk.sponte.google.sections.homepage.SearchForm;
+import pages.google.sections.homepage.SearchForm;
 
 /**
  * Created by n450777 on 22/05/15.

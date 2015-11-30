@@ -1,4 +1,4 @@
-package uk.sponte.google.sections.searchresults;
+package pages.google.sections.searchresults;
 
 import org.openqa.selenium.support.FindBy;
 import uk.sponte.automation.seleniumpom.PageSection;
