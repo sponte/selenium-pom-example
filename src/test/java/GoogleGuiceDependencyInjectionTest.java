@@ -52,11 +52,13 @@ public class GoogleGuiceDependencyInjectionTest {
         if(!searchResult.isPresent())
             throw new RuntimeException("Could not find a link with wikipedia in url");
 
+        String expectedSearchResultTitle = searchResult.get().title.getText();
+
         searchResult.get().select();
 
         Article article = pageFactory.get(Article.class);
         article.firstHeading.waitFor();
 
-        Assert.assertEquals("Selenium - Wikipedia, the free encyclopedia", pageFactory.getDriver().getTitle());
+        Assert.assertEquals(expectedSearchResultTitle, pageFactory.getDriver().getTitle());
     }
 }

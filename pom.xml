@@ -4,6 +4,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <properties>
+        <selenium-pom.version>2.0.0</selenium-pom.version>
+    </properties>
+
+
     <groupId>uk.sponte.automation</groupId>
     <artifactId>selenium-pom-example</artifactId>
     <version>1.0-SNAPSHOT</version>
@@ -30,7 +35,7 @@
         <dependency>
             <groupId>uk.sponte.automation</groupId>
             <artifactId>selenium-pom</artifactId>
-            <version>1.0.7</version>
+            <version>${selenium-pom.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>

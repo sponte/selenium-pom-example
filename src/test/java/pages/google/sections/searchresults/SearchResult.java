@@ -11,6 +11,9 @@ import java.net.URL;
  * Created by n450777 on 01/05/15.
  */
 public class SearchResult extends PageSection {
+    @FindBy(tagName = "h3")
+    public PageElement title;
+
     @FindBy(css = ".r a")
     private PageElement link;
 
